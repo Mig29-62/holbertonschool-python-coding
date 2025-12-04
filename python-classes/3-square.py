@@ -13,12 +13,14 @@ class Square:
         else:
             self._size = size
 
+    @property
+    def size(self):
+        return self._size
+
     def area(self):
         return self._size**2
 
-    @property
-    def size(self):
-        return self.size
 
+    @property
     def size(self, value):
         self._size = value
