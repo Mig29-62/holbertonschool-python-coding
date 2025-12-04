@@ -11,14 +11,14 @@ class Square:
         elif size < 0:
             raise ValueError("size must be >= 0")
         else:
-            self.__size = size
+            self._size = size
 
     def area(self):
-        return self.__size**2
+        return self._size**2
 
     @property
     def size(self):
-        return self.size
+        return self._size
 
     def size(self, value):
-        self.__size = value
+        self._size = value
