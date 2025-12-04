@@ -21,6 +21,5 @@ class Square:
         return self._size**2
 
 
-    @property
     def size(self, value):
         self._size = value
